@@ -1,0 +1,6 @@
+---
+- name: Bootstrap master node
+  import_playbook: k8-admin.yml
+
+- name: Join worker nodes to kube cluster
+  import_playbook: k8-node.yml
